@@ -1,0 +1,28 @@
+@use '/app/styles/mixings' as *;
+.thanksSection {
+  height: 100vh;
+  color: #333333;
+  .thanksSection_title {
+    font-size: 3.5vh;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include breakpoints(lg) {
+      font-size: 10vh;
+    }
+  }
+  .thanksSection_text {
+    font-size: 1.5vh;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @include breakpoints(lg) {
+      font-size: 3vh;
+    }
+  }
+  .thanksSection_buttonWrapper {
+    width: 100%;
+    max-width: 100%;
+    @include breakpoints(lg) {
+      max-width: 50%;
+    }
+  }
+}
