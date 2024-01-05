@@ -8,9 +8,10 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <main>
-      <Head>
-        <title>Phu Fenix Nature</title>
-      </Head>
+<Head>
+  <title>Fenix Nature - Unikalne Rękodzieła z Madagaskaru</title>
+  <meta property="og:title" content="Fenix Nature - Unikalne Rękodzieła z Madagaskaru - torby, kosze, lampy, klosze" />
+</Head>
       <ImageBlock/>
       {textBlocks.map((data) => (
         <TextBlock
