@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main>
 <Head>
-  <title>Fenix Nature - Unikalne Rękodzieła z Madagaskaru</title>
-  <meta property="og:title" content="Fenix Nature - Unikalne Rękodzieła z Madagaskaru - torby, kosze, lampy, klosze" />
+  <title>Fenix Nature - Unikalne boho Rękodzieła z Madagaskaru</title>
+  <meta property="og:title" content="Fenix Nature - Unikalne boho Rękodzieła z Madagaskaru - torby, kosze, lampy, klosze" />
 </Head>
       <ImageBlock/>
       {textBlocks.map((data) => (
