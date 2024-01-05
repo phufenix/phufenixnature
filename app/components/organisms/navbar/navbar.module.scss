@@ -1,3 +1,45 @@
+@use '/app/styles/mixings' as *;
 .nav {
   z-index: 3;
+  margin: 0 1rem;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  @include breakpoints(lg) {
+    top: 24px;
+    margin: 0 5rem;
+  }
+  .navTitle {
+    font-size: 24px;
+    font-weight: 800;
+    @include breakpoints(lg) {
+      font-size: 34px;
+    }
+    span {
+      color: #8FBC8F;
+      font-weight: 800;
+      font-size: 24px;
+      @include breakpoints(lg) {
+        font-size: 32px;
+      }
+    }
+
+  }
+  .menuList {
+    align-items: center;
+    gap:20px;
+    font-size: 20px;
+    z-index: 9;
+    margin:0;
+    a {
+      text-decoration: none;
+      color: #8FBC8F;
+      font-weight: 400;
+      transition: color 0.3s ease-out;
+      &:hover {
+        color: #789d78;
+      }
+    }
+  }
 }

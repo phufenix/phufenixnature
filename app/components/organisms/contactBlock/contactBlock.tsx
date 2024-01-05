@@ -1,41 +1,7 @@
 'use client';
-import { useState } from 'react';
 import styles from './contactBlock.module.scss';
-import { useRouter } from 'next/navigation';
-import Spinner from 'react-bootstrap/Spinner';
 
 export default function ContactBlock() {
-  const [fullname, setFullname] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const router = useRouter();
-
-
-  const handleSubmit = async (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    const res = await fetch('/api/sendgrid', {
-      body: JSON.stringify({
-        fullname: fullname,
-        phone: phone,
-        email: email,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
-
-    const { error } = await res.json();
-    if (error) {
-      console.log(error);
-      setError(true);
-      return;
-    }
-    router.push('thanks');
-  };
   return (
     <>
       <section
@@ -47,66 +13,8 @@ export default function ContactBlock() {
         </div>
         <div className={styles.textWrapper}>
           <p className={styles.text}>
-            Możesz też skontaktować się z nami za pomocą formularza, wtedy to my odezwiemy się do Ciebie.
-            Z uwagi na dużą ilość zapytań czas odpowiedzi może być nieco opóźniony, jednak nie dłuższy niż 48h roboczych.
-
+          Skontaktuj się z nami, aby uzyskać więcej informacji! Jesteśmy do Twojej dyspozycji poprzez e-mail <a href="email:phufenix.nature@gmail.com">phufenix.nature@gmail.com</a> oraz telefon <a href="tel:502575552"> +48502575552</a>. W razie pytań lub zapytań handlowych, prosimy o bezpośredni kontakt pod poniższymi danymi. Ze względu na duże zainteresowanie, czas odpowiedzi może wynieść do 48 godzin roboczych. Warto również zaznaczyć, że pełną ofertę możemy przesłać na Twój adres e-mail.
           </p>
-          <div className={styles.formWrapper}>
-            <form className={styles.form} onSubmit={handleSubmit}>
-              <div className={styles.box}>
-                <div className={`${styles.formBox} name`}>
-                  <label htmlFor="name">Imię</label>
-                  <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    required
-                    value={fullname}
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                      setFullname(e.target.value)
-                    }
-                  />
-                </div>
-                <div className={`${styles.formBox} phone`}>
-                  <label htmlFor="frm-phone">Telefon</label>
-                  <input
-                    id="frm-phone"
-                    type="text"
-                    name="phone"
-                    value={phone}
-                    required
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                      setPhone(e.target.value)
-                    }
-                  />
-                </div>
-              </div>
-              <div className={styles.box}>
-                <div className={`${styles.formBox} email`}>
-                  <label htmlFor="frm-email">Email</label>
-                  <input
-                    id="frm-email"
-                    type="email"
-                    name="email"
-                    value={email}
-                    required
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                      setEmail(e.target.value)
-                    }
-                  />
-                </div>
-                <div className={styles.buttonBox}>
-                  <button className={styles.button} type="submit">
-                    Wyślij
-                  </button>
-                </div>
-              </div>
-            </form>
-            <div className={styles.spinnerWrapper}>
-              {loading && (<Spinner className={`${styles.spinner}`} animation="border" />)}
-            </div>
-            {error && (<p className={`${styles.error}`}>Wystąpił błąd, spróbuj ponownie później</p>)}
-          </div>
         </div>
       </section>
     </>

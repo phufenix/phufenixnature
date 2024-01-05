@@ -2,7 +2,7 @@ const textBlocks = [
   {
     id: 'about_as',
     title: 'O nas',
-    text: `<p>Witaj w <span>Fenix Nature</span> - Twoim wyjątkowym źródle autentycznych i egzotycznych artykułów prosto z serca Madagaskaru! Jesteśmy dumni z tego, że możemy dostarczyć Ci unikalne produkty z tego magicznego kraju, znanego z niezwykłej różnorodności przyrody, bogatej kultury i tradycji.</p><br> <p>W naszym asortymencie znajdziesz szeroki wybór artykułów, począwszy od ręcznie wykonanych <span>ozdób</span> po egzotyczne <span>przyprawy</span>, <span>unikatowe tekstylia</span> i wiele innych. Dbamy o to, aby nasze produkty odzwierciedlały bogactwo kultury Madagaskaru, jednocześnie spełniając oczekiwania naszych klientów z całego świata.</p>
+    text: `<p>W naszym asortymencie znajdziesz szeroki wybór ręcznie wykonanych artykułów - <span>kosze</span>, <span>torebki</span>, <span>plecione abażury</span> do żyrandoli oraz lamp, <span>unikatowe tekstylia</span>, jak również inne rękodzieła robione na zamówienie. Wszystkie produkty są ręcznie wytwarzane z materiału o nazwie <span>raffia</span> i importowane z Madagaskaru. Zajmujemy się sprzedaża hurtową - niezależnie od ilości zamówień. Powięcej informacji zapraszamy do kontaktu. </p>
     `,
   },
 ];

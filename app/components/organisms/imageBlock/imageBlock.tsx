@@ -33,7 +33,12 @@ export default function ImageBlock() {
     <>
       <div className={`${styles.imageBlock}`}>
         <div className={`${styles.imageWrapper}`}>
-          <div className={`${styles.textWrapper}`}>Oryginalne produkty z Madagaskaru</div>
+          <div className={`${styles.textWrapper}`}>
+            <h1 className={`${styles.title}`}>Oryginalne produkty z Madagaskaru</h1>
+            <h2 className={`${styles.subtitle}`}>
+            Witaj w Fenix Nature - Twoim zaufanym partnerze w hurtowej sprzedaży oryginalnych produktów prosto z serca Madagaskaru.
+            </h2>
+          </div>
           <div className={styles.overlay}></div>
           <Image
             className={`${styles.imageWrapper_image}`}
@@ -41,8 +46,8 @@ export default function ImageBlock() {
             alt="kosz"
           />
         </div>
-        <div  className={`${styles.iconWrapper} ${isScrolled ? styles.hidden : ''}`}>
-          <HiArrowCircleDown className={`${styles.arrowIcon}`} size={70}  onClick={handleScrollDown}  />
+        <div  className={`${styles.iconWrapper}`}>
+          <HiArrowCircleDown className={`${styles.arrowIcon} ${isScrolled ? styles.hidden : ''}`} size={70}  onClick={handleScrollDown}  />
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@ interface Props {
 export default function Menu(props: Props) {
   return (
     <>
-      <menu>
+      <menu className='flex lg:hidden'>
         <div className={`${styles.hamburgerMenu} relative`}>
           <Hamburger toggled={props.isOpen} toggle={props.toggle} />
         </div>

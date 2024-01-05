@@ -1,4 +1,3 @@
-import CarouselBlock from './components/organisms/carouselBlock/carouselBlock';
 import ContactBlock from './components/organisms/contactBlock/contactBlock';
 import GalleryBlock from './components/organisms/galleryBlock/galleryBlock';
 import ImageBlock from './components/organisms/imageBlock/imageBlock';
@@ -12,7 +11,6 @@ export default function Home() {
       <Head>
         <title>Phu Fenix Nature</title>
       </Head>
-      {/* <CarouselBlock /> */}
       <ImageBlock/>
       {textBlocks.map((data) => (
         <TextBlock
