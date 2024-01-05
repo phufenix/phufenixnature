@@ -7,8 +7,8 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Phu Fenix Nature',
-  description: 'Phu Fenix Nature',
+  title: 'Fenix Nature - Unikalne Rękodzieła z Madagaskaru',
+  description: 'Fenix Nature - Unikalne Rękodzieła z Madagaskaru - torby, kosze, lampy, klosze',
 };
 
 export default function RootLayout({
