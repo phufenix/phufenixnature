@@ -34,9 +34,9 @@ export default function ImageBlock() {
       <div className={`${styles.imageBlock}`}>
         <div className={`${styles.imageWrapper}`}>
           <div className={`${styles.textWrapper}`}>
-            <h1 className={`${styles.title}`}>Oryginalne produkty z Madagaskaru</h1>
+            <h1 className={`${styles.title}`}>ORYGNALNE RĘKODZIEŁA Z MADAGASKARU <br/> SPRZEDAŻ HURTOWA</h1>
             <h2 className={`${styles.subtitle}`}>
-            Witaj w Fenix Nature - Twoim zaufanym partnerze w hurtowej sprzedaży oryginalnych produktów prosto z serca Madagaskaru.
+            Witaj w Fenix Nature - Twoim zaufanym partnerze w hurtowej sprzedaży oryginalnych i ręcznych tekstyliów prosto z serca Madagaskaru.
             </h2>
           </div>
           <div className={styles.overlay}></div>
