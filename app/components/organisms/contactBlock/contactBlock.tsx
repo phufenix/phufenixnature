@@ -13,7 +13,7 @@ export default function ContactBlock() {
         </div>
         <div className={styles.textWrapper}>
           <p className={styles.text}>
-          Skontaktuj się z nami, aby uzyskać więcej informacji! Jesteśmy do Twojej dyspozycji poprzez e-mail <a href="email:phufenix.nature@gmail.com">phufenix.nature@gmail.com</a> oraz telefon <a href="tel:502575552"> +48502575552</a>. W razie pytań lub zapytań handlowych, prosimy o bezpośredni kontakt pod poniższymi danymi. Ze względu na duże zainteresowanie, czas odpowiedzi może wynieść do 48 godzin roboczych. Warto również zaznaczyć, że pełną ofertę możemy przesłać na Twój adres e-mail.
+          Skontaktuj się z nami, aby uzyskać więcej informacji! Jesteśmy do Twojej dyspozycji poprzez e-mail <a href="email:phufenix.nature@gmail.com">phufenix.nature@gmail.com</a> oraz telefon <a href="tel:502575552"> +48 502 575 552</a>. W razie zapytań handlowych bądź chęci zapoznania się z naszą pełną ofertą - prosimy o bezpośredni kontakt pod powyższymi danymi.
           </p>
         </div>
       </section>
