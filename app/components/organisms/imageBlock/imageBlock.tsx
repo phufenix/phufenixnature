@@ -37,6 +37,7 @@ export default function ImageBlock() {
             <h1 className={`${styles.title}`}>ORYGNALNE RĘKODZIEŁA Z MADAGASKARU <br/> SPRZEDAŻ HURTOWA</h1>
             <h2 className={`${styles.subtitle}`}>
             Witaj w Fenix Nature - Twoim zaufanym partnerze w hurtowej sprzedaży oryginalnych i ręcznych tekstyliów prosto z serca Madagaskaru.
+            Skontaktuj się z nami a wyślemy Ci pełną ofertę.
             </h2>
           </div>
           <div className={styles.overlay}></div>
